@@ -1,1 +1,52 @@
+html {
+  overflow-x: hidden;
+  font-size: 16px;
+}
 
+header {
+  position: fixed;
+  height: 15vh;
+  width: 100vw;
+  z-index: 999;
+  padding: 0 10vw;
+  display: flex;
+  align-items: center;
+}
+header .logo-img {
+  width: 10%;
+  height: 60%;
+  background-image: url("../assets/images/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header .navigation-wrapper {
+  width: 70%;
+  height: 60%;
+  background-color: white;
+}
+header .btns-wrapper {
+  width: 20%;
+  height: 60%;
+  background-color: blue;
+}
+
+main {
+  height: 80vh;
+  position: relative;
+  background: rgb(255, 51, 102);
+  background: linear-gradient(-90deg, rgb(255, 51, 102) 0%, rgb(255, 153, 102) 100%);
+  border-radius: 0 0 0 100px;
+}
+main .bg-image {
+  background-image: url("../assets/images/bg-pattern-intro-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 180%;
+  left: 50%;
+  transform: translateX(-40%);
+  overflow: visible;
+  height: 100%;
+}

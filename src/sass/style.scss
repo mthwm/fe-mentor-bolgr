@@ -1,0 +1,62 @@
+$side-padding: 10vw;
+
+html {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+header {
+  position: fixed;
+  height: 15vh;
+  width: 100vw;
+  z-index: 999;
+  padding: 0 $side-padding;
+  display: flex;
+  align-items: center;
+
+  .logo-img {
+    width: 10%;
+    height: 60%;
+    background-image: url("../assets/images/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .navigation-wrapper {
+    width: 70%;
+    height: 60%;
+    background-color: white;
+  }
+
+  .btns-wrapper {
+    width: 20%;
+    height: 60%;
+    background-color: blue;
+  }
+}
+
+main {
+  height: 80vh;
+  position: relative;
+  background: rgb(255, 51, 102);
+  background: linear-gradient(
+    -90deg,
+    rgba(255, 51, 102, 1) 0%,
+    rgba(255, 153, 102, 1) 100%
+  );
+  border-radius: 0 0 0 100px;
+
+  .bg-image {
+    background-image: url("../assets/images/bg-pattern-intro-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 180%;
+    left: 50%;
+    transform: translateX(-40%);
+    overflow: visible;
+    height: 100%;
+  }
+}
